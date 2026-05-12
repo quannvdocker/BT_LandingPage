@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viettel Cloud — Đám Mây Toàn Diện Cho Doanh Nghiệp Việt</title>
+  <meta
+    name="description"
+    content="Hệ sinh thái điện toán đám mây toàn diện từ Viettel Cloud dành cho doanh nghiệp và tổ chức chuyển đổi số."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #0a0a0a;
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.02);
+      transition: all 0.2s ease-out;
+    }
+
+    .sticky-cta {
+      animation: slideUp 0.4s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded bg-[#E30613] flex items-center justify-center text-white font-bold">
+          V
+        </div>
+
+        <div>
+          <div class="font-black text-lg">Viettel Cloud</div>
+          <div class="text-xs text-gray-500">Cloud Ecosystem</div>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="#products" class="hover:text-[#E30613] transition">Sản phẩm</a>
+        <a href="#benefits" class="hover:text-[#E30613] transition">Lợi ích</a>
+        <a href="#pricing" class="hover:text-[#E30613] transition">Bảng giá</a>
+        <a href="#contact" class="hover:text-[#E30613] transition">Liên hệ</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="hidden md:block text-sm text-gray-600">
+          📞 1800 8000 (nhánh 8)
+        </div>
+
+        <button
+          data-cta="nav-trial"
+          class="bg-[#E30613] hover:bg-[#B30000] text-white px-5 py-2 rounded-md font-semibold transition"
+        >
+          Dùng Thử Miễn Phí
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] text-white flex items-center relative overflow-hidden">
+
+    <div class="absolute inset-0 hero-grid opacity-20"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+      <div>
+        <div class="uppercase tracking-[0.2em] text-[#E30613] text-sm font-semibold mb-6">
+          Hệ Sinh Thái Điện Toán Đám Mây — Được Phát Triển Bởi Viettel
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+          Viettel Cloud — Đám Mây Toàn Diện Cho Doanh Nghiệp Việt
+        </h1>
+
+        <p class="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
+          Hơn 70 sản phẩm & dịch vụ cloud (IaaS, PaaS, SaaS) trên hạ tầng bảo mật cao,
+          kết nối siêu băng rộng. Triển khai nhanh — Tối ưu chi phí — Chuyển đổi số hiệu quả.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+
+          <button
+            data-cta="hero-primary"
+            class="bg-[#E30613] hover:bg-[#B30000] text-white px-8 py-4 rounded-md text-lg font-bold transition"
+          >
+            Nhận Tư Vấn Miễn Phí
+          </button>
+
+          <button class="border border-white/30 px-8 py-4 rounded-md text-lg font-semibold hover:border-white transition">
+            Xem Demo Sản Phẩm
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-4 text-sm text-gray-300">
+          <div class="border border-white/10 rounded-full px-4 py-2">🔒 Bảo mật chuẩn quốc tế</div>
+          <div class="border border-white/10 rounded-full px-4 py-2">⚡ Uptime 99.9%</div>
+          <div class="border border-white/10 rounded-full px-4 py-2">🇻🇳 Hạ tầng Việt Nam</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur p-6 shadow-2xl">
+          <div class="bg-[#111] rounded-2xl p-6 border border-white/10">
+
+            <div class="flex items-center justify-between mb-8">
+              <div>
+                <div class="text-xl font-bold">Cloud Dashboard</div>
+                <div class="text-sm text-gray-400">Realtime Infrastructure Monitoring</div>
+              </div>
+
+              <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="bg-[#1A1A1A] p-5 rounded-xl">
+                <div class="text-sm text-gray-400 mb-2">CPU Usage</div>
+                <div class="text-3xl font-black text-[#E30613]">78%</div>
+              </div>
+
+              <div class="bg-[#1A1A1A] p-5 rounded-xl">
+                <div class="text-sm text-gray-400 mb-2">Storage</div>
+                <div class="text-3xl font-black text-[#E30613]">12TB</div>
+              </div>
+            </div>
+
+            <div class="bg-[#1A1A1A] rounded-xl p-5 h-44 flex items-center justify-center text-gray-500">
+              Placeholder Dashboard Visualization
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="py-16 bg-[#F5F5F5]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center mb-14">
+        <div>
+          <div class="text-4xl font-black text-[#E30613] mb-2">70+</div>
+          <div class="font-semibold">Sản phẩm Cloud</div>
+        </div>
+
+        <div>
+          <div class="text-4xl font-black text-[#E30613] mb-2">99.9%</div>
+          <div class="font-semibold">Uptime</div>
+        </div>
+
+        <div>
+          <div class="text-4xl font-black text-[#E30613] mb-2">3.000+</div>
+          <div class="font-semibold">Doanh nghiệp</div>
+        </div>
+
+        <div>
+          <div class="text-4xl font-black text-[#E30613] mb-2">10+</div>
+          <div class="font-semibold">Năm kinh nghiệm</div>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-gray-200 pt-10 text-center">
+        <div class="inline-flex items-center gap-8 flex-wrap justify-center text-gray-500 text-sm font-medium">
+          <span>ISO 27001</span>
+          <span>PCI DSS</span>
+          <span>VNCERT</span>
+          <span>Tier III Infrastructure</span>
+          <span>Cloud Native Ready</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits" class="py-24 bg-[#F5F5F5]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-16">
+        <div class="text-[#E30613] font-semibold uppercase tracking-[0.2em] text-sm mb-4">
+          Why Choose Viettel Cloud
+        </div>
+
+        <h2 class="text-4xl lg:text-5xl font-black">
+          Tại Sao Doanh Nghiệp Chọn Viettel Cloud?
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-2xl p-8 border-l-4 border-[#E30613] shadow-sm card-hover">
+          <div class="text-5xl mb-6">🔒</div>
+          <h3 class="text-2xl font-bold mb-4">An Toàn & Bảo Mật</h3>
+          <p class="text-gray-600 mb-5">
+            Đạt các tiêu chuẩn bảo mật quốc tế cao nhất.
+          </p>
+          <div class="text-[#E30613] font-bold">ISO 27001 Ready</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border-l-4 border-[#E30613] shadow-sm card-hover">
+          <div class="text-5xl mb-6">⚡</div>
+          <h3 class="text-2xl font-bold mb-4">Triển Khai Nhanh Chóng</h3>
+          <p class="text-gray-600 mb-5">
+            Thiết lập hạ tầng trong vài phút.
+          </p>
+          <div class="text-[#E30613] font-bold">Khởi tạo ~5 phút</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border-l-4 border-[#E30613] shadow-sm card-hover">
+          <div class="text-5xl mb-6">💰</div>
+          <h3 class="text-2xl font-bold mb-4">Tối Ưu Chi Phí</h3>
+          <p class="text-gray-600 mb-5">
+            Thanh toán linh hoạt theo nhu cầu thực tế.
+          </p>
+          <div class="text-[#E30613] font-bold">Tiết kiệm đến 40%</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border-l-4 border-[#E30613] shadow-sm card-hover">
+          <div class="text-5xl mb-6">🌐</div>
+          <h3 class="text-2xl font-bold mb-4">Hạ Tầng Mạnh Mẽ</h3>
+          <p class="text-gray-600 mb-5">
+            Kết nối tốc độ cao, ổn định.
+          </p>
+          <div class="text-[#E30613] font-bold">Uptime 99.9%</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section id="products" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <div class="text-[#E30613] font-semibold uppercase tracking-[0.2em] text-sm mb-4">
+          Product Ecosystem
+        </div>
+
+        <h2 class="text-4xl font-black mb-8">
+          Hệ Sinh Thái Sản Phẩm Cloud Toàn Diện
+        </h2>
+
+        <div class="space-y-6">
+
+          <div class="flex gap-5 p-5 rounded-xl border hover:border-[#E30613] transition">
+            <div class="text-3xl">☁️</div>
+            <div>
+              <div class="text-xl font-bold mb-2">vServer & vDC</div>
+              <div class="text-gray-600">Máy chủ ảo triển khai trong vài phút</div>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-5 rounded-xl border hover:border-[#E30613] transition">
+            <div class="text-3xl">🗄️</div>
+            <div>
+              <div class="text-xl font-bold mb-2">Cloud Storage</div>
+              <div class="text-gray-600">Lưu trữ linh hoạt, tối ưu chi phí</div>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-5 rounded-xl border hover:border-[#E30613] transition">
+            <div class="text-3xl">🖥️</div>
+            <div>
+              <div class="text-xl font-bold mb-2">Cloud Desktop</div>
+              <div class="text-gray-600">Làm việc từ xa an toàn</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] rounded-3xl p-8 text-white min-h-[500px] flex items-center justify-center">
+        <div class="text-center">
+          <div class="w-24 h-24 rounded-full bg-[#E30613] flex items-center justify-center text-4xl mx-auto mb-6">
+            ▶
+          </div>
+
+          <div class="text-2xl font-bold mb-3">Demo Dashboard Placeholder</div>
+          <div class="text-gray-400">
+            Thêm screenshot hoặc video chính thức từ Viettel Cloud.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 bg-[#F5F5F5]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <div class="text-[#E30613] font-semibold uppercase tracking-[0.2em] text-sm mb-4">
+          Pricing Plans
+        </div>
+
+        <h2 class="text-4xl lg:text-5xl font-black">
+          Lựa Chọn Gói Dịch Vụ Phù Hợp
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+          <h3 class="text-3xl font-black mb-4">vServer Starter</h3>
+          <div class="text-4xl font-black mb-8 text-[#E30613]">Từ X VNĐ/tháng</div>
+
+          <div class="space-y-4 mb-10">
+            <div>✔ Máy chủ ảo cơ bản</div>
+            <div>✔ Lưu trữ cơ bản</div>
+            <div>✔ Hỗ trợ email</div>
+          </div>
+
+          <button class="w-full py-4 rounded-md border border-[#E30613] text-[#E30613] font-bold">
+            Bắt Đầu Dùng Thử
+          </button>
+        </div>
+
+        <div class="bg-[#1A1A1A] text-white rounded-2xl p-8 border border-[#E30613] scale-[1.03]">
+          <div class="inline-block bg-[#E30613] text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+            Phổ biến nhất
+          </div>
+
+          <h3 class="text-3xl font-black mb-4">vServer Pro</h3>
+          <div class="text-4xl font-black mb-8 text-[#E30613]">Từ Y VNĐ/tháng</div>
+
+          <div class="space-y-4 mb-10">
+            <div>✔ vGPU & vDC</div>
+            <div>✔ VDI & Cloud Desktop</div>
+            <div>✔ Hỗ trợ kỹ thuật 24/7</div>
+          </div>
+
+          <button class="w-full py-4 rounded-md bg-[#E30613] text-white font-bold">
+            Chọn Gói Này
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+          <h3 class="text-3xl font-black mb-4">Enterprise</h3>
+          <div class="text-4xl font-black mb-8 text-[#E30613]">Liên hệ báo giá</div>
+
+          <div class="space-y-4 mb-10">
+            <div>✔ Dedicated Infrastructure</div>
+            <div>✔ SLA cao</div>
+            <div>✔ Tùy chỉnh theo yêu cầu</div>
+          </div>
+
+          <button class="w-full py-4 rounded-md border border-[#E30613] text-[#E30613] font-bold">
+            Liên Hệ Báo Giá
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <div class="text-[#E30613] font-semibold uppercase tracking-[0.2em] text-sm mb-4">
+          FAQ
+        </div>
+
+        <h2 class="text-4xl lg:text-5xl font-black">
+          Giải Đáp Thắc Mắc Thường Gặp
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <details class="border border-gray-200 rounded-xl p-6">
+          <summary class="cursor-pointer font-bold text-lg">
+            Viettel Cloud có phù hợp với doanh nghiệp vừa và nhỏ không?
+          </summary>
+
+          <p class="mt-5 text-gray-600 leading-relaxed">
+            Có. Với mô hình pay-as-you-go, doanh nghiệp chỉ trả tiền theo nhu cầu thực tế.
+          </p>
+        </details>
+
+        <details class="border border-gray-200 rounded-xl p-6">
+          <summary class="cursor-pointer font-bold text-lg">
+            Dữ liệu của tôi có được bảo mật không?
+          </summary>
+
+          <p class="mt-5 text-gray-600 leading-relaxed">
+            Viettel Cloud đạt các tiêu chuẩn bảo mật quốc tế cao nhất.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="py-24 bg-gradient-to-br from-[#0A0A0A] to-[#B30000] text-white text-center">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+      <h2 class="text-4xl lg:text-6xl font-black leading-tight mb-8">
+        Đưa Doanh Nghiệp Lên Cloud Ngay Hôm Nay
+      </h2>
+
+      <p class="text-lg text-gray-300 mb-10">
+        Không cam kết. Không chi phí ẩn. Hỗ trợ kỹ thuật 24/7.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+        <button class="bg-[#E30613] hover:bg-[#B30000] text-white px-10 py-5 rounded-md text-lg font-bold transition">
+          Nhận Tư Vấn Miễn Phí
+        </button>
+
+        <button class="border border-white/20 px-10 py-5 rounded-md text-lg font-bold">
+          Gọi Ngay 1800 8000
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0A0A0A] text-white pt-20 pb-10">
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12 mb-14">
+
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded bg-[#E30613] flex items-center justify-center font-black">
+            V
+          </div>
+
+          <div class="text-2xl font-black">Viettel Cloud</div>
+        </div>
+
+        <p class="text-gray-400">
+          Hạ Tầng Tin Cậy — Chuyển Đổi Số Bền Vững
+        </p>
+      </div>
+
+      <div>
+        <div class="font-bold mb-5">Menu</div>
+
+        <div class="space-y-3 text-gray-400">
+          <div>Giải pháp</div>
+          <div>Sản phẩm</div>
+          <div>Hỗ trợ</div>
+          <div>Về chúng tôi</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-bold mb-5">Liên hệ</div>
+
+        <div class="space-y-3 text-gray-400">
+          <div>🌐 viettelcloud.vn</div>
+          <div>📞 1800 8000 (nhánh 8)</div>
+          <div>📧 cskhdn@viettel.com.vn</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="font-bold mb-5">Mạng xã hội</div>
+
+        <div class="space-y-3 text-gray-400">
+          <div>Facebook</div>
+          <div>LinkedIn</div>
+          <div>YouTube</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
+      © 2025 Tập đoàn Viettel. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-[#E30613] text-white py-3 px-6 flex items-center justify-between z-50 sticky-cta">
+    <div class="font-semibold">Dùng Thử Miễn Phí</div>
+    <div class="font-bold">📞 1800 8000</div>
+  </div>
+
+</body>
+</html>
